@@ -1,13 +1,20 @@
-# Ryanair fare finder
+# ryanair fare finder
 
-Don't get rip off by Ryan! Query Ryanair's API to reveal flight prices between your desired locations.
+Don't get ripped off by Ryan! Query Ryanair's API to reveal flight prices between your desired locations.
 
-Installation instructions to be found [below](https://github.com/karolow/ryanair-fare-finder#installation).
+### Installation
+
+```shell
+git clone https://github.com/karolow/ryanair-fare-finder.git
+cd ryanair-fare-finder
+
+pip install . -r requirements.txt
+```
 
 ### Features & usage
 
 * use `fare-finder` command to run the command line app 
-* you can pass additional [arguments](https://github.com/karolow/ryanair-fare-finder#installation like dates or html chart export
+* you can pass additional like dates or html chart export (see below or use `fare-finder --help`)
 * select the origin location from the list (use "/" to search)
 * select destination from available choices
 * check out the result in your browser or open the exported html file with a Plotly chart
@@ -15,10 +22,10 @@ Installation instructions to be found [below](https://github.com/karolow/ryanair
 ### Example queries:
 
 ```shell
-fare-finder --days 30 --explore --html_path existing_dir/chart_name.html
+fare-finder --days 14 --explore --html_path existing_dir/chart_name.html
 ```
 
-This command will randomly pick a connection pair and generate a chart with fares covering the nearest 30 days. It will also save an html file to the requested path.
+This command will randomly pick a connection pair and generate a chart with fares covering the nearest 14 days. It will also save an html file to the requested path.
 
 ![random_query](https://karolpiekar.ski/images/screens/ryanair-fare-finder/dub_stn_ryanair_fares_1.png)
 
@@ -35,12 +42,4 @@ Options:
   --help                Show this message and exit.
 ```
 
-### Installation
-
-```shell
-git clone https://github.com/karolow/ryanair-fare-finder.git
-cd ryanair-fare-finder
-
-pip install . -r requirements.txt
-```
 
