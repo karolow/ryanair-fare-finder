@@ -19,6 +19,10 @@ pip install . -r requirements.txt
 * select destination from available choices
 * check out the result in your browser or open the exported html file with a Plotly chart
 
+### Disclaimer
+
+Please note that the terminal based interactive menu to pick airports may not work properly on Windows OS (it's not supported by the relevant simple-term-menu package). In case you'd like to run the app on Widnows anyway, please, use the --explore argument to bypass the origin/destination selection.
+
 ### Example queries:
 
 ```shell
